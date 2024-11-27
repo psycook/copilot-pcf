@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+  <control namespace="smc" constructor="CopilotComponent" version="0.0.1" display-name-key="CopilotComponent" description-key="CopilotComponent description" control-type="standard" >
+
+    <external-service-usage enabled="false">
+    </external-service-usage>
+
+    <property name="tokenEndpoint" display-name-key="Token Endpoint" description-key="The token endpoint for the copilot.  This can be found in Copilot Studio in the Mobile Channel details." of-type="SingleLine.Text" usage="input" required="true" />
+
+    <property name="copilotEndpoint" display-name-key="Copilot Endpoint" description-key="The endpoint to send requests directly to the Copilot" of-type="SingleLine.Text" usage="output" required="true" />
+
+    <resources>
+      <code path="index.ts" order="1"/>
+      <!--<css path="style.css" order="2"/>-->
+    </resources>
+
+  </control>
+</manifest>
